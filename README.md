@@ -51,5 +51,4 @@ Discounts & Returns – Discount rates, refunds, and return trends.
 
 Channels & Payments – Online vs Store sales, payment method breakdown.
 
-🔹 Key Takeaway
-This project demonstrates how to build an end-to-end analytics solution, starting from database design and synthetic data generation, through SQL and Python analysis, and ending with professional dashboards in Excel and Power BI.
+🔹 This project demonstrates how to build an end-to-end analytics solution, starting from database design and synthetic data generation, through SQL and Python analysis, and ending with professional dashboards in Excel and Power BI.
