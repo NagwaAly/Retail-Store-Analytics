@@ -1,0 +1,31 @@
+product_id,product_name,product_category,price,supplier_id
+1,Gym Gloves,Sports,215.04,S7
+2,Women Jacket,Clothing,324.09,S1
+3,Smart TV,Electronics,345.59,S1
+4,Tennis Racket,Sports,348.18,S2
+5,Pasta Box,Food,478.34,S2
+6,Business Analytics Book,Books,110.98,S2
+7,Smartphone,Electronics,280.46,S9
+8,Sports Shorts,Clothing,175.20,S9
+9,AI Basics,Books,356.05,S8
+10,Hoodie,Clothing,132.46,S9
+11,Jeans Pants,Clothing,382.93,S1
+12,Jeans Pants,Clothing,58.47,S6
+13,Jeans Pants,Clothing,150.31,S6
+14,AI Basics,Books,88.45,S7
+15,Pasta Box,Food,499.49,S10
+16,Rice Pack,Food,75.12,S10
+17,AI Basics,Books,316.06,S4
+18,SQL Guide,Books,434.60,S9
+19,Hoodie,Clothing,280.10,S9
+20,Men T-Shirt,Clothing,51.45,S5
+21,Jeans Pants,Clothing,362.39,S1
+22,Running Shoes,Sports,341.60,S7
+23,Laptop,Electronics,144.65,S9
+24,Chocolate Bar,Food,22.95,S5
+25,AI Basics,Books,47.48,S7
+26,Jeans Pants,Clothing,321.72,S8
+27,Tennis Racket,Sports,257.56,S2
+28,Wireless Headphones,Electronics,437.68,S3
+29,SQL Guide,Books,361.09,S9
+30,Men T-Shirt,Clothing,107.74,S10

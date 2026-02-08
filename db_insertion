@@ -1,0 +1,99 @@
+import random
+from faker import Faker
+from datetime import datetime, timedelta
+import pyodbc
+
+fake = Faker()
+
+conn = pyodbc.connect(
+    'DRIVER={ODBC Driver 17 for SQL Server};'
+    'SERVER=DESKTOP-M70NM43\\MSSQLSERVER01;' 
+    'DATABASE=RetailStoreDB;'
+    'Trusted_Connection=yes;'
+)
+cursor = conn.cursor()
+
+start_date = datetime(2023, 1, 1)
+end_date = datetime.today()
+datekey = 1
+current_date = start_date
+
+while current_date <= end_date:
+    cursor.execute("""
+        insert into dimdate (datekey, fulldate, year, month, quarter, weekday)
+        values (?, ?, ?, ?, ?, ?)
+    """, datekey, current_date, current_date.year, current_date.month,
+       (current_date.month-1)//3 + 1, current_date.strftime("%A"))
+    datekey += 1
+    current_date += timedelta(days=1)
+
+for i in range(1, 51):
+    cursor.execute("""
+        insert into dimcustomers (customer_id, cust_name, cust_email, phone,cust_address, region, segment)
+        values (?, ?, ?, ?, ?, ?, ?)
+    """, i, fake.name(), fake.email(), fake.phone_number(),
+       fake.address().replace("\n", " "),
+       random.choice(["Alexandria","Cairo","Giza","Mansoura","Assiut"]),
+       random.choice(["Wholesale","Retail","VIP"]))
+
+categories = ["Food","Electronics", "Books", "Clothing", "Sports"]
+for i in range(1, 31):
+    cursor.execute("""
+        insert into dimproducts (product_id, product_name, product_category, price, supplier_id)
+        values (?, ?, ?, ?, ?)
+    """, i, fake.word().capitalize(),
+       random.choice(categories),
+       round(random.uniform(20, 500), 2),
+       f"S{random.randint(1, 10)}")
+
+for i in range(1, 201):
+    orderdate = fake.date_between(start_date="-3y", end_date="today")
+    cursor.execute("""
+        insert into dimorders (order_id, order_date, order_status, channel)
+        values (?, ?, ?, ?)
+    """, i, orderdate,
+       random.choice(["Pending","Completed","Cancelled"]),
+       random.choice(["Store","Online"]))
+
+methods = ["Cash", "Credit Card", "PayPal"]
+for i in range(1, 201):
+    paydate = fake.date_between(start_date="-3y", end_date="today")
+    cursor.execute("""
+        insert into dimpayments (payment_id, payment_method, payment_date)
+        values (?, ?, ?)
+    """, i, random.choice(methods), paydate)
+
+reasons = ["Damaged","Wrong Item","Not Suitable"]
+for i in range(1, 51):
+    rdate = fake.date_between(start_date="-3y", end_date="today")
+    cursor.execute("""
+        insert into dimreturns (return_id, return_reason, return_date)
+        values (?, ?, ?)
+    """, i, random.choice(reasons), rdate)
+
+for i in range(1, 51):
+    startdate = fake.date_between(start_date="-3y", end_date="today")
+    enddate = fake.date_between(start_date=startdate, end_date="today")
+    cursor.execute("""
+        insert into dimdiscounts (discount_id, discount_percent, discount_start_date, end_date)
+        values (?, ?, ?, ?)
+    """, i, random.choice([5,10,15,20,25]), startdate, enddate)
+
+for i in range(1, 501):
+    quantity = random.randint(1, 5)
+    unitprice = round(random.uniform(20, 500), 2)
+    salesamount = quantity * unitprice
+    discountamount = round(random.uniform(0, salesamount*0.2), 2)
+    refundamount = round(random.uniform(0, salesamount*0.1), 2)
+    cursor.execute("""
+        insert into factsales (fact_id, order_id, customer_id, product_id, payment_id, discount_id, return_id, date_key, quantity, unitprice, sales_amount, discount_amount, refund_amount)
+        values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    """, i, random.randint(1,200), random.randint(1,50), random.randint(1,30),
+       random.randint(1,200), random.randint(1,50), random.randint(1,50),
+       random.randint(1, (end_date-start_date).days), quantity, unitprice, salesamount, discountamount, refundamount)
+
+conn.commit()
+cursor.close()
+conn.close()
+
+print("data inserted successfully")

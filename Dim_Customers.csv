@@ -1,0 +1,51 @@
+customer_id,cust_name,cust_email,phone,cust_address,region,segment
+1,Lisa Mcgee,daltonelizabeth@example.net,460-562-7927,"557 Valerie Mount Suite 998 Priceside, AZ 17294",Cairo,Wholesale
+2,Daniel Stein,zperry@example.org,246-975-5032x61196,"72747 Edwards Tunnel South Ashleystad, RI 61296",Delta,Wholesale
+3,Nicholas Roberts,travis27@example.net,(994)786-8145x956,"026 White Vista Davidfort, AZ 88969",Upper Egypt,VIP
+4,Jose Baxter,christinadavila@example.com,001-905-667-5750x1141,"827 Lopez Rapid Nicholaston, ND 38050",Upper Egypt,Wholesale
+5,Edgar Vega,yvonnebrennan@example.net,001-662-755-1400x2662,"27476 Roberts Flats Suite 984 New Michael, KY 34562",Upper Egypt,VIP
+6,Paula Ochoa,uweber@example.com,7734766255,"586 Jamie Mountains Port Grantfort, NJ 09438",Cairo,Retail
+7,Teresa Conley,christine01@example.com,(341)786-3438,Unit 0772 Box 6384 DPO AE 05344,Giza,Retail
+8,Christine Leonard,henrydixon@example.com,+1-806-833-3499x352,"72673 Melody Island Stewartside, AS 52005",Delta,VIP
+9,Kenneth Mendez,rbridges@example.net,246-349-9382x154,"1043 Byrd Radial Mcdanielbury, OK 99601",Cairo,Wholesale
+10,Brian Clayton,mponce@example.org,001-923-933-0025x19563,"164 Ashley Knoll Apt. 223 East Felicia, AL 99122",Upper Egypt,Retail
+11,Brent Fuller,mendozacaroline@example.net,001-694-458-6222x7578,USCGC Torres FPO AA 02990,Upper Egypt,VIP
+12,Ana Diaz,zamoranathaniel@example.net,001-449-526-4623x999,"79331 Jones Inlet Suite 226 New Michaelstad, AS 87934",Alexandria,Wholesale
+13,Rachel Harrison,garciakyle@example.net,475.581.1336x600,"660 Rebecca Lights Samanthachester, VI 64008",Giza,Wholesale
+14,Xavier Williams,pamelaadams@example.com,847.300.6730,"212 Johnson Spurs Lake Tanya, AR 47472",Giza,VIP
+15,Ian Parker,swilson@example.com,3094338306,"29933 Jennifer Common East Rachelside, TX 13989",Giza,Retail
+16,Kathleen Henderson,michelle47@example.org,806.836.2872x0041,"75419 Shelley Flats Apt. 767 East Johnbury, VI 29286",Giza,VIP
+17,Kevin Romero,wcoffey@example.org,683.789.7480,"20386 Karen Vista West Anthonyhaven, ME 63035",Cairo,Wholesale
+18,Dylan Sims,molly28@example.com,+1-495-905-7685x4595,"97251 Anna Stravenue Apt. 101 Wrightmouth, VA 71540",Delta,VIP
+19,Samuel Adams,brandonshaffer@example.org,+1-805-230-4509x10484,"179 Norma Views North Courtneychester, MI 89462",Alexandria,VIP
+20,Lindsay Macdonald,yfigueroa@example.net,388-741-7233x32633,"162 Giles Station Suite 918 Phillipston, NC 91433",Cairo,Wholesale
+21,Joseph Wilkerson,marissa41@example.com,656.245.2320,"276 Kenneth Spur Apt. 987 East Jonathonville, MH 54981",Giza,Retail
+22,Suzanne Gilbert,ashleybenton@example.net,001-734-232-7910x5133,"579 Clark Spur South Kimberlybury, VI 54877",Alexandria,Wholesale
+23,David Harris,pford@example.com,979.921.7871x126,"7835 Brown Mills West Anna, AZ 07025",Delta,VIP
+24,Katelyn Parker,zreeves@example.com,+1-931-540-0073x4323,"788 Cortez Port Apt. 159 Port Colleen, KS 53443",Alexandria,Wholesale
+25,Mark Smith,andrewbailey@example.com,5723814712,"631 Barnett Coves Apt. 781 Kingmouth, FL 65745",Delta,Retail
+26,David Lopez,myersapril@example.com,568.607.9364x06686,"4452 West Bridge Apt. 758 South Samanthaberg, DC 93979",Giza,VIP
+27,Heather Jones,shellygross@example.com,2414096764,USNV Smith FPO AA 80993,Giza,VIP
+28,Tina Sanders,makayla85@example.com,(831)644-8095,"899 Micheal Causeway Suite 426 Shelbyview, AZ 95641",Upper Egypt,VIP
+29,Willie Higgins,thompsonsheila@example.net,386-949-5632x05459,"299 Keith Island Catherinefurt, IA 06759",Cairo,VIP
+30,Julie Wolfe,coleeric@example.org,001-343-376-3539x410,"782 Jacob Cove Apt. 383 West Meaganside, ID 39384",Cairo,VIP
+31,Monique Lewis,mjackson@example.net,(838)942-3467x77906,"28101 Carter Center Port Melissabury, IA 91559",Alexandria,Retail
+32,Catherine Long,smithpaul@example.com,619-757-0766x582,"84184 Aguilar Islands East Nathan, WA 65056",Upper Egypt,Wholesale
+33,Jerry Garza,boyerpamela@example.org,3517132514,USNV Davis FPO AA 65975,Upper Egypt,VIP
+34,Brittany Melendez,pattoncassandra@example.net,399-235-4041x962,"19466 Christopher Viaduct Apt. 224 New Lisaton, FL 83381",Upper Egypt,Wholesale
+35,Matthew Bell,eharrington@example.org,358-738-1732x2219,"8325 Ronald Trafficway Suite 419 West Jerry, MP 25899",Upper Egypt,Wholesale
+36,Carol Thomas,ihawkins@example.com,(399)907-4285,"PSC 8692, Box 2786 APO AA 73513",Giza,Retail
+37,William Fisher,scottwallace@example.org,001-557-947-0087x699,"297 Susan Viaduct Suite 863 Port Kristinashire, OH 42110",Delta,Retail
+38,Richard Leblanc,carterdonald@example.com,612.642.0288x317,"531 Stanley Courts Danielside, NH 52960",Giza,Retail
+39,Shane Montoya,pjackson@example.net,445.293.4585x789,"5184 Rhodes Mountains Apt. 731 East Cynthia, FL 52173",Cairo,VIP
+40,Anthony Ortiz,margaretjohnson@example.net,247-641-1941x7156,"5834 Good Tunnel Byrdtown, OH 38600",Upper Egypt,Wholesale
+41,Laura Porter,jessica38@example.com,(928)859-9738x705,"44487 Jessica Rest Apt. 158 Port Brandonville, AK 43257",Cairo,Retail
+42,Melissa Foster,petermyers@example.com,774-660-1978,"4292 Christopher Loaf Laurenfort, PW 84110",Cairo,Retail
+43,John Moreno,craig09@example.net,222.959.4882,"66509 Kristen Prairie Apt. 317 Donnaburgh, GA 72217",Alexandria,Retail
+44,Scott Ray,jilliancoleman@example.net,313-995-3264,"354 Samuel Pike Phillipsview, RI 35071",Alexandria,VIP
+45,Charles Maldonado,richardsoncatherine@example.net,7057743383,"22979 Herrera Forge West Ian, IN 72132",Delta,Wholesale
+46,Brianna Salinas,terribrennan@example.net,988-744-2993,USNS Black FPO AP 89583,Cairo,Wholesale
+47,Donna Roach,williamwhite@example.net,(809)334-7470x881,"4010 Sydney Circle New Rebecca, KY 62073",Upper Egypt,Retail
+48,Veronica Mitchell,codycervantes@example.com,+1-412-298-3314x95935,"88841 Bray Motorway Aliciaport, CT 55307",Alexandria,Wholesale
+49,Melissa Carr,kevin10@example.net,+1-733-778-7963,"626 Rachel Plaza Suite 793 Rodriguezfurt, SD 75470",Upper Egypt,VIP
+50,Kyle Orr,umason@example.net,+1-478-608-6967x241,"434 Frazier Crest West Alyssaborough, WV 81229",Upper Egypt,Retail
